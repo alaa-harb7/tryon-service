@@ -1,0 +1,10 @@
+logging:
+  level: "INFO"
+
+  format: "default"
+
+  file_rotation: "10 MB"
+
+  retention: "30 days"
+
+  compression: "zip"

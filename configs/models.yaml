@@ -1,0 +1,6 @@
+models:
+  provider: "catvton"
+
+  retry_count: 2
+
+  timeout_seconds: 300

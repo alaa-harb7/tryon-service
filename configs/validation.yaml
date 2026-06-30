@@ -1,0 +1,16 @@
+validation:
+  max_image_size_mb: 20
+
+  allowed_formats:
+    - jpg
+    - jpeg
+    - png
+    - webp
+
+  min_width: 512
+
+  min_height: 512
+
+  max_width: 4096
+
+  max_height: 4096

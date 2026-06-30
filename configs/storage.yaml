@@ -1,0 +1,11 @@
+storage:
+  provider: "local"
+
+  uploads_directory: "uploads"
+
+  generated_directory: "generated"
+
+  cache_directory: "cache"
+
+cloudinary:
+  folder: "tryon"

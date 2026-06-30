@@ -1,0 +1,4 @@
+queue:
+  enabled: false
+
+  max_workers: 1

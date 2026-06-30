@@ -1,0 +1,13 @@
+model:
+
+  path: "models/person_detection/yolo11n.onnx"
+
+provider:
+
+  execution_provider: "CPUExecutionProvider"
+
+confidence_threshold: 0.40
+
+iou_threshold: 0.50
+
+input_size: 640

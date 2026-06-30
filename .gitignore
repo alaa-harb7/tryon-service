@@ -1,0 +1,102 @@
+# =========================
+# Python
+# =========================
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# =========================
+# Environment
+# =========================
+.env
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Testing
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Runtime
+# =========================
+temp/
+outputs/
+uploads/
+generated/
+logs/
+cache/
+tmp/
+
+# =========================
+# HuggingFace Cache
+# =========================
+.cache/
+huggingface/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# External repositories
+external/catvton/
+
+# Model weights
+*.pth
+*.pt
+*.onnx
+*.pkl
+*.task
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environment
+.env
+
+# Outputs
+uploads/
+generated/
+logs/
+cache/
+outputs/
+
+# AI Models
+*.pth
+*.pt
+*.onnx
+*.pkl
+*.task
+
+# Git
+.gitmodules
+
+# Test outputs
+scripts/output/
+
+# Local images
+scripts/images/
+
+# AI Models
+assets/models/**/*.pth
+assets/models/**/*.pt
+assets/models/**/*.onnx
+assets/models/**/*.pkl
+assets/models/**/*.task
