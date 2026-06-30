@@ -71,7 +71,7 @@ def setup_external_repositories():
             [
                 "git",
                 "clone",
-                "https://github.com/zhengchong/CatVTON.git",
+                "https://github.com/Zheng-Chong/CatVTON.git",
                 str(catvton_path),
             ]
         )
