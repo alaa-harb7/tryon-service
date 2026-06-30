@@ -37,14 +37,39 @@ def download_all_models():
     download_file(yolo_url, YOLO_DIR / "yolo11n.onnx")
 
     # 3. SCHP Models (ATR & LIP)
-    schp_atr_url = "https://huggingface.co/zhengchong/CatVTON/resolve/main/resource/parser/ltr.pth"
-    schp_lip_url = "https://huggingface.co/zhengchong/CatVTON/resolve/main/resource/parser/lip.pth"
-    download_file(schp_atr_url, SCHP_DIR / "exp-schp-201908301523-atr.pth")
-    download_file(schp_lip_url, SCHP_DIR / "exp-schp-201908261155-lip.pth")
+
+    schp_atr_url = (
+        "https://huggingface.co/zhengchong/CatVTON/resolve/main/"
+        "SCHP/exp-schp-201908301523-atr.pth"
+    )
+
+    schp_lip_url = (
+        "https://huggingface.co/zhengchong/CatVTON/resolve/main/"
+        "SCHP/exp-schp-201908261155-lip.pth"
+    )
+
+    download_file(
+        schp_atr_url,
+        SCHP_DIR / "exp-schp-201908301523-atr.pth",
+    )
+
+    download_file(
+        schp_lip_url,
+        SCHP_DIR / "exp-schp-201908261155-lip.pth",
+    )
 
     # 4. DensePose Configs & Weights (Loaded directly via CatVTON architecture)
     dp_config_base = "https://raw.githubusercontent.com/facebookresearch/detectron2/main/projects/DensePose/configs/Base-DensePose-RCNN-FPN.yaml"
     dp_config_r50 = "https://raw.githubusercontent.com/facebookresearch/detectron2/main/projects/DensePose/configs/densepose_rcnn_R_50_FPN_s1x.yaml"
+    densepose_model_url = (
+        "https://huggingface.co/zhengchong/CatVTON/resolve/main/"
+        "DensePose/model_final_162be9.pkl"
+    )
+
+    download_file(
+        densepose_model_url,
+        DENSEPOSE_DIR / "model_final_162be9.pkl",
+    )
     download_file(dp_config_base, DENSEPOSE_DIR / "Base-DensePose-RCNN-FPN.yaml")
     download_file(dp_config_r50, DENSEPOSE_DIR / "densepose_rcnn_R_50_FPN_s1x.yaml")
 
