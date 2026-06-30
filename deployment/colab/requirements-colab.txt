@@ -78,9 +78,9 @@ matplotlib==3.9.1
 # ------------------------
 # Colab Utilities
 # ------------------------
-# gdown==5.1.0
-# nest-asyncio==1.6.0
-# pyngrok==7.1.6
+gdown==5.1.0
+nest-asyncio==1.6.0
+pyngrok==7.1.6
 
 # ------------------------
 # Protobuf
@@ -88,10 +88,3 @@ matplotlib==3.9.1
 # Keep pinned for MediaPipe compatibility.
 # ------------------------
 protobuf==4.25.3
-
-python-multipart==0.0.20
-
-einops
-
-timm
-xformers
