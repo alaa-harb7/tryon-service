@@ -33,14 +33,14 @@ def warmup_models():
 
 
 def run_server(host: str, port: int, ngrok_token: str | None):
-    # Apply nest_asyncio to prevent loop conflict in Google Colab Jupyters
-    try:
-        import nest_asyncio
+    # # Apply nest_asyncio to prevent loop conflict in Google Colab Jupyters
+    # try:
+    #     import nest_asyncio
 
-        nest_asyncio.apply()
-        print("✓ nest_asyncio applied successfully.")
-    except ImportError:
-        print("⚠️ Warning: nest_asyncio not installed.")
+    #     nest_asyncio.apply()
+    #     print("✓ nest_asyncio applied successfully.")
+    # except ImportError:
+    #     print("⚠️ Warning: nest_asyncio not installed.")
 
     # Optional public ngrok tunnel
     if ngrok_token:
