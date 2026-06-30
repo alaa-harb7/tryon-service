@@ -58,7 +58,14 @@ def run_server(host: str, port: int, ngrok_token: str | None):
     import uvicorn
 
     print(f"Starting FastAPI Try-On Service on http://{host}:{port}...")
-    uvicorn.run("tryon_service.main:app", host=host, port=port, reload=False)
+    uvicorn.run(
+        "tryon_service.main:app",
+        host=host,
+        port=port,
+        reload=False,
+        access_log=True,
+        log_level="info",
+    )
 
 
 def main():
