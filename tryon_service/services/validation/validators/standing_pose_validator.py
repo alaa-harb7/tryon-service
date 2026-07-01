@@ -55,13 +55,13 @@ class StandingPoseValidator(BaseValidator):
             PoseLandmark.RIGHT_ANKLE
         )
 
-        if (
-            left_ankle.visibility < MIN_VISIBILITY
-            or right_ankle.visibility < MIN_VISIBILITY
-        ):
-            return Result.failure(
-                "Feet are not clearly visible."
-            )
+        # if (
+        #     left_ankle.visibility < MIN_VISIBILITY
+        #     or right_ankle.visibility < MIN_VISIBILITY
+        # ):
+        #     return Result.failure(
+        #         "Feet are not clearly visible."
+        #     )
 
         shoulder_diff = abs(
             left_shoulder.y - right_shoulder.y

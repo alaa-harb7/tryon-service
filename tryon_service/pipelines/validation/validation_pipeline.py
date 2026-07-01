@@ -44,9 +44,9 @@ from tryon_service.services.validation.validators.body_coverage_validator import
 from tryon_service.services.validation.validators.facing_camera_validator import (
     FacingCameraValidator,
 )
-from tryon_service.services.validation.validators.landmark_visibility_validator import (
-    LandmarkVisibilityValidator,
-)
+# from tryon_service.services.validation.validators.landmark_visibility_validator import (
+#     LandmarkVisibilityValidator,
+# )
 from tryon_service.services.validation.validators.standing_pose_validator import (
     StandingPoseValidator,
 )
@@ -97,7 +97,7 @@ class PoseValidationPipeline(BasePipeline):
                 GarmentCompatibilityValidator(),
                 BodyCoverageValidator(),
                 FacingCameraValidator(),
-                LandmarkVisibilityValidator(),
+                # LandmarkVisibilityValidator(),
                 StandingPoseValidator(),
             ]
         )

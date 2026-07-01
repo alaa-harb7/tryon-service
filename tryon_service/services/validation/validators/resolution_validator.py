@@ -6,8 +6,8 @@ from tryon_service.pipelines.base.context import PipelineContext
 from tryon_service.services.validation.base import BaseValidator
 
 
-MIN_WIDTH = 768
-MIN_HEIGHT = 1024
+MIN_WIDTH = 384
+MIN_HEIGHT = 512
 
 
 class ResolutionValidator(BaseValidator):
